@@ -1,6 +1,9 @@
-mod p33;
-pub use crate::p33::check_dcf;
+mod p34;
 
 fn main() {
-    check_dcf::check_dcf();
+    let mut prod = 1;
+    for index in 1..10 {
+        prod *= index;
+        println!("The factorial of {} is {}", index, prod);
+    }
 }
